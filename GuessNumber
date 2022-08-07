@@ -1,0 +1,19 @@
+from random import randint
+secret_num=randint(1,100)
+for a in range(5):
+    guess=int(input("enter your guess number:-"))
+    if guess<secret_num:
+        print("HIGHER")
+        print(secret_num)
+    elif guess>secret_num:
+        print("LOWER")
+        print(secret_num)
+    else:
+        print("you got number:")
+        print(secret_num)
+        break
+else:
+    print("""you loose the game,
+    the secret number is,
+    secret_num""")
+
